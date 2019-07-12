@@ -1,0 +1,16 @@
+PODS:
+  - CalendarDateRangePickerViewController (0.1.0)
+
+DEPENDENCIES:
+  - CalendarDateRangePickerViewController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CalendarDateRangePickerViewController
+
+SPEC CHECKSUMS:
+  CalendarDateRangePickerViewController: 9e82a36a21ad7338f4e21a314469bfabe1f738fb
+
+PODFILE CHECKSUM: 8554d45845334a198f6da3e5bc90038c005d458d
+
+COCOAPODS: 1.6.1

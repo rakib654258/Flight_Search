@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CEA11F4CC88004AB480B300 /* Pods_Flight_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A796A4ADA546B4C63A6D5E /* Pods_Flight_Share.framework */; };
+		4335F37F22CE524100D81EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335F37E22CE524100D81EF2 /* AppDelegate.swift */; };
+		4335F38122CE524100D81EF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335F38022CE524100D81EF2 /* ViewController.swift */; };
+		4335F38422CE524100D81EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4335F38222CE524100D81EF2 /* Main.storyboard */; };
+		4335F38622CE524300D81EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4335F38522CE524300D81EF2 /* Assets.xcassets */; };
+		4335F38922CE524300D81EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4335F38722CE524300D81EF2 /* LaunchScreen.storyboard */; };
+		4383199022D1C85900EC06ED /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383198F22D1C85900EC06ED /* CustomSegmentedControl.swift */; };
+		438903D322D8A7C1005F4AB2 /* AirportList.json in Resources */ = {isa = PBXBuildFile; fileRef = 438903D222D8A7C1005F4AB2 /* AirportList.json */; };
+		438903D522D8AD0F005F4AB2 /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438903D422D8AD0F005F4AB2 /* customTableViewCell.swift */; };
+		438903D922D8AE0B005F4AB2 /* AirportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438903D822D8AE0B005F4AB2 /* AirportListViewController.swift */; };
+		438903DB22D8FD5F005F4AB2 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438903DA22D8FD5F005F4AB2 /* SearchResultsViewController.swift */; };
+		43C9A60E22CF783800E0F220 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C9A60C22CF783800E0F220 /* DLRadioButton.m */; };
+		43F21D7122CF2AAA00FBDA3B /* SeatTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F21D7022CF2AAA00FBDA3B /* SeatTypeController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4335F37B22CE524100D81EF2 /* Flight Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flight Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4335F37E22CE524100D81EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4335F38022CE524100D81EF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4335F38322CE524100D81EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4335F38522CE524300D81EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4335F38822CE524300D81EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4335F38A22CE524300D81EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4383198F22D1C85900EC06ED /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		438903D222D8A7C1005F4AB2 /* AirportList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AirportList.json; sourceTree = "<group>"; };
+		438903D422D8AD0F005F4AB2 /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
+		438903D822D8AE0B005F4AB2 /* AirportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewController.swift; sourceTree = "<group>"; };
+		438903DA22D8FD5F005F4AB2 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		43C9A60B22CF783700E0F220 /* Flight Share-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flight Share-Bridging-Header.h"; sourceTree = "<group>"; };
+		43C9A60C22CF783800E0F220 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		43C9A60D22CF783800E0F220 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		43F21D7022CF2AAA00FBDA3B /* SeatTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatTypeController.swift; sourceTree = "<group>"; };
+		56A796A4ADA546B4C63A6D5E /* Pods_Flight_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flight_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		732F3F3BB3614882892BF513 /* Pods-Flight Share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Share.release.xcconfig"; path = "Target Support Files/Pods-Flight Share/Pods-Flight Share.release.xcconfig"; sourceTree = "<group>"; };
+		B5747996308A32C170D10C7A /* Pods-Flight Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Share.debug.xcconfig"; path = "Target Support Files/Pods-Flight Share/Pods-Flight Share.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4335F37822CE524100D81EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEA11F4CC88004AB480B300 /* Pods_Flight_Share.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F75F7E4D8C47AE45303663C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5747996308A32C170D10C7A /* Pods-Flight Share.debug.xcconfig */,
+				732F3F3BB3614882892BF513 /* Pods-Flight Share.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		34BCD2FA415705F7E8DB18CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56A796A4ADA546B4C63A6D5E /* Pods_Flight_Share.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4303B17222D3C5B600FA5E57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4383198F22D1C85900EC06ED /* CustomSegmentedControl.swift */,
+				43C9A60D22CF783800E0F220 /* DLRadioButton.h */,
+				43C9A60C22CF783800E0F220 /* DLRadioButton.m */,
+				438903D422D8AD0F005F4AB2 /* customTableViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4335F37222CE524100D81EF2 = {
+			isa = PBXGroup;
+			children = (
+				4335F37D22CE524100D81EF2 /* Flight Share */,
+				4335F37C22CE524100D81EF2 /* Products */,
+				1F75F7E4D8C47AE45303663C /* Pods */,
+				34BCD2FA415705F7E8DB18CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4335F37C22CE524100D81EF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4335F37B22CE524100D81EF2 /* Flight Share.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4335F37D22CE524100D81EF2 /* Flight Share */ = {
+			isa = PBXGroup;
+			children = (
+				43A4B5BC22D4EA3E00C6B904 /* Controller */,
+				43A4B5BB22D4EA1500C6B904 /* View */,
+				4303B17222D3C5B600FA5E57 /* Model */,
+				4335F38522CE524300D81EF2 /* Assets.xcassets */,
+				4335F38A22CE524300D81EF2 /* Info.plist */,
+				43C9A60B22CF783700E0F220 /* Flight Share-Bridging-Header.h */,
+				438903D222D8A7C1005F4AB2 /* AirportList.json */,
+			);
+			path = "Flight Share";
+			sourceTree = "<group>";
+		};
+		43A4B5BB22D4EA1500C6B904 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4335F38222CE524100D81EF2 /* Main.storyboard */,
+				4335F38722CE524300D81EF2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43A4B5BC22D4EA3E00C6B904 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4335F37E22CE524100D81EF2 /* AppDelegate.swift */,
+				4335F38022CE524100D81EF2 /* ViewController.swift */,
+				43F21D7022CF2AAA00FBDA3B /* SeatTypeController.swift */,
+				438903D822D8AE0B005F4AB2 /* AirportListViewController.swift */,
+				438903DA22D8FD5F005F4AB2 /* SearchResultsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4335F37A22CE524100D81EF2 /* Flight Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4335F38D22CE524300D81EF2 /* Build configuration list for PBXNativeTarget "Flight Share" */;
+			buildPhases = (
+				CB071E915BA1A06DD803BD05 /* [CP] Check Pods Manifest.lock */,
+				4335F37722CE524100D81EF2 /* Sources */,
+				4335F37822CE524100D81EF2 /* Frameworks */,
+				4335F37922CE524100D81EF2 /* Resources */,
+				499754D35533AC3A310D032A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flight Share";
+			productName = "Flight Share";
+			productReference = 4335F37B22CE524100D81EF2 /* Flight Share.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4335F37322CE524100D81EF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "macOS Mojave";
+				TargetAttributes = {
+					4335F37A22CE524100D81EF2 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 4335F37622CE524100D81EF2 /* Build configuration list for PBXProject "Flight Share" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4335F37222CE524100D81EF2;
+			productRefGroup = 4335F37C22CE524100D81EF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4335F37A22CE524100D81EF2 /* Flight Share */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4335F37922CE524100D81EF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4335F38922CE524300D81EF2 /* LaunchScreen.storyboard in Resources */,
+				438903D322D8A7C1005F4AB2 /* AirportList.json in Resources */,
+				4335F38622CE524300D81EF2 /* Assets.xcassets in Resources */,
+				4335F38422CE524100D81EF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		499754D35533AC3A310D032A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flight Share/Pods-Flight Share-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CalendarDateRangePickerViewController/CalendarDateRangePickerViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalendarDateRangePickerViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flight Share/Pods-Flight Share-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB071E915BA1A06DD803BD05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flight Share-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4335F37722CE524100D81EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4383199022D1C85900EC06ED /* CustomSegmentedControl.swift in Sources */,
+				438903D922D8AE0B005F4AB2 /* AirportListViewController.swift in Sources */,
+				438903D522D8AD0F005F4AB2 /* customTableViewCell.swift in Sources */,
+				43C9A60E22CF783800E0F220 /* DLRadioButton.m in Sources */,
+				4335F38122CE524100D81EF2 /* ViewController.swift in Sources */,
+				43F21D7122CF2AAA00FBDA3B /* SeatTypeController.swift in Sources */,
+				4335F37F22CE524100D81EF2 /* AppDelegate.swift in Sources */,
+				438903DB22D8FD5F005F4AB2 /* SearchResultsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4335F38222CE524100D81EF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4335F38322CE524100D81EF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4335F38722CE524300D81EF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4335F38822CE524300D81EF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4335F38B22CE524300D81EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4335F38C22CE524300D81EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4335F38E22CE524300D81EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5747996308A32C170D10C7A /* Pods-Flight Share.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Flight Share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rakib-s.Flight-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flight Share/Flight Share-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4335F38F22CE524300D81EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732F3F3BB3614882892BF513 /* Pods-Flight Share.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Flight Share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rakib-s.Flight-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flight Share/Flight Share-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4335F37622CE524100D81EF2 /* Build configuration list for PBXProject "Flight Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4335F38B22CE524300D81EF2 /* Debug */,
+				4335F38C22CE524300D81EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4335F38D22CE524300D81EF2 /* Build configuration list for PBXNativeTarget "Flight Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4335F38E22CE524300D81EF2 /* Debug */,
+				4335F38F22CE524300D81EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4335F37322CE524100D81EF2 /* Project object */;
+}

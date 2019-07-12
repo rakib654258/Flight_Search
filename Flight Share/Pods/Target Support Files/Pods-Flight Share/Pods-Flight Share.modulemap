@@ -1,0 +1,6 @@
+framework module Pods_Flight_Share {
+  umbrella header "Pods-Flight Share-umbrella.h"
+
+  export *
+  module * { export * }
+}
