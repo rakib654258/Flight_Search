@@ -13,6 +13,7 @@
 		4335F38422CE524100D81EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4335F38222CE524100D81EF2 /* Main.storyboard */; };
 		4335F38622CE524300D81EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4335F38522CE524300D81EF2 /* Assets.xcassets */; };
 		4335F38922CE524300D81EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4335F38722CE524300D81EF2 /* LaunchScreen.storyboard */; };
+		436CD54622DB257E005B3B8E /* jsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD54522DB257E005B3B8E /* jsonModel.swift */; };
 		4383199022D1C85900EC06ED /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383198F22D1C85900EC06ED /* CustomSegmentedControl.swift */; };
 		438903D322D8A7C1005F4AB2 /* AirportList.json in Resources */ = {isa = PBXBuildFile; fileRef = 438903D222D8A7C1005F4AB2 /* AirportList.json */; };
 		438903D522D8AD0F005F4AB2 /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438903D422D8AD0F005F4AB2 /* customTableViewCell.swift */; };
@@ -30,6 +31,7 @@
 		4335F38522CE524300D81EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4335F38822CE524300D81EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4335F38A22CE524300D81EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		436CD54522DB257E005B3B8E /* jsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonModel.swift; sourceTree = "<group>"; };
 		4383198F22D1C85900EC06ED /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		438903D222D8A7C1005F4AB2 /* AirportList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AirportList.json; sourceTree = "<group>"; };
 		438903D422D8AD0F005F4AB2 /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +82,8 @@
 				43C9A60D22CF783800E0F220 /* DLRadioButton.h */,
 				43C9A60C22CF783800E0F220 /* DLRadioButton.m */,
 				438903D422D8AD0F005F4AB2 /* customTableViewCell.swift */,
+				436CD54522DB257E005B3B8E /* jsonModel.swift */,
+				438903D222D8A7C1005F4AB2 /* AirportList.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,7 +115,6 @@
 				4335F38522CE524300D81EF2 /* Assets.xcassets */,
 				4335F38A22CE524300D81EF2 /* Info.plist */,
 				43C9A60B22CF783700E0F220 /* Flight Share-Bridging-Header.h */,
-				438903D222D8A7C1005F4AB2 /* AirportList.json */,
 			);
 			path = "Flight Share";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				43C9A60E22CF783800E0F220 /* DLRadioButton.m in Sources */,
 				4335F38122CE524100D81EF2 /* ViewController.swift in Sources */,
 				43F21D7122CF2AAA00FBDA3B /* SeatTypeController.swift in Sources */,
+				436CD54622DB257E005B3B8E /* jsonModel.swift in Sources */,
 				4335F37F22CE524100D81EF2 /* AppDelegate.swift in Sources */,
 				438903DB22D8FD5F005F4AB2 /* SearchResultsViewController.swift in Sources */,
 			);

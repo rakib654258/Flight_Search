@@ -120,7 +120,7 @@
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="21"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazrat Shahjalal International" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emH-72-GGv">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazrat Shahjalal International Airport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emH-72-GGv">
                                         <rect key="frame" x="8" y="32" width="137.5" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="EjM-st-Gya"/>
@@ -129,7 +129,7 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netaji Subhas Chandra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OD-gO-NIy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netaji Subhas Chandra International Airport" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OD-gO-NIy">
                                         <rect key="frame" x="189.5" y="32" width="137.5" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Pd2-UG-2R5"/>
@@ -391,7 +391,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Passengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyn-Nq-MRi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyn-Nq-MRi">
                                         <rect key="frame" x="60" y="30" width="195" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="Trc-Us-qR0"/>
@@ -951,7 +951,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="DoneBtnAction:" destination="MHg-NN-IXt" eventType="touchUpInside" id="eAr-k7-yiO"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="seatTypeSegue" id="Qig-el-e9T"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="PZB-jE-Xo0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1769,6 +1769,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2p2-HC-dEx"/>
-        <segue reference="AYq-eG-hXB"/>
+        <segue reference="PZB-jE-Xo0"/>
     </inferredMetricsTieBreakers>
 </document>

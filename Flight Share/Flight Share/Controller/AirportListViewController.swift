@@ -31,8 +31,8 @@ class AirportListViewController: UIViewController,UITableViewDataSource,UITabBar
     @IBOutlet weak var searchBarOutlet: UISearchBar!
     @IBOutlet weak var tableViewOutlet: UITableView!
     
-    var Airport = ["Shahajalal Airport","Kamal Airport","jamal Airport"]
-    var city = ["Dhaka","Chitagon","khulna"]
+    var Airport = ["Hazrat Shahjalal International Airport","Netaji Subhas Chandra International Airport"]
+    var city = ["DHC","CCU"]
     
     var searching = false
     var filterArray: [String]?
@@ -124,5 +124,6 @@ class AirportListViewController: UIViewController,UITableViewDataSource,UITabBar
         }
         self.tableViewOutlet.reloadData()
     }
+    
 
 }

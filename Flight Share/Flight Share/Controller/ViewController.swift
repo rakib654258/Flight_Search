@@ -25,9 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        seatTypeLbl.text = seatType
-        travellerLbl.text = "\(adult + child + infant) Passengers"
+
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backIteam = UIBarButtonItem()
@@ -38,6 +36,44 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        //Seat Value in label
+        let userDeafault = UserDefaults()
+        //set date in date label
+//        if let data = userDeafault.object(forKey: "Date"){
+//            if let dataString = data as? String{
+//                if depatureORreturn == 1{
+////                    ReturnDate = dateFormatter.string(from: dataString)
+////                    let returnDateSplit = ReturnDate.characters.split{$0 == ","}.map(String.init)
+//                    self.depatureOutlet.text = dataString
+//                }
+//                else if depatureORreturn == 2{
+//                    self.returnLblOutlet.text = dataString
+//                }
+//            }
+//        }
+        
+        if let data = userDeafault.object(forKey: "SeatType"){
+            if let dataString = data as? String{
+                self.seatTypeLbl.text = dataString
+                seatType = dataString
+            }
+        }
+        if let data = userDeafault.object(forKey: "Traveller"){
+            if let dataString = data as? String{
+                self.travellerLbl.text = dataString
+            }
+        }
+        if let data = userDeafault.object(forKey: "adult"){
+            adult = data as! Int
+        }
+        if let data = userDeafault.object(forKey: "child"){
+            adult = data as! Int
+        }
+        if let data = userDeafault.object(forKey: "Infant"){
+            adult = data as! Int
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -210,18 +246,20 @@ class ViewController: UIViewController {
 //            guard responseString != nil else{return}
             print("SearchValue responseString = \(responseString)")
             
-            let responseData = responseString?.data(using: .utf8)
-            let dataDictionary = try? JSONSerialization.jsonObject(with: responseData!, options: .mutableLeaves)
-            print(dataDictionary as Any)
-            
-            if let dataDictionary = dataDictionary as? [String: Any]{
-                if let singleData = dataDictionary["Results"] as? [String]{
-                    print("Result is - \(singleData)")
-                    //self.searchKey = singleData
-                }
-            }
+//            let responseData = responseString?.data(using: .utf8)
+//            let dataDictionary = try? JSONSerialization.jsonObject(with: responseData!, options: .mutableLeaves)
+//            print(dataDictionary as Any)
+//
+//            if let dataDictionary = dataDictionary as? [String: Any]{
+//                if let singleData = dataDictionary["Results"] as? [String]{
+//                    print("Result is - \(singleData)")
+//                    //self.searchKey = singleData
+//                }
+//            }
             do{
+                var myData = try JSONDecoder().decode(Response.self, from: data)
                 
+                print("mydata : ",myData.Results.SearchRequest)
             }catch let jsonError{
                 print("Error Serializing json: ",jsonError)
             }
@@ -244,9 +282,28 @@ extension ViewController : CalendarDateRangePickerViewControllerDelegate {
     func didTapDoneWithDateRange(startDate: Date!) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        
+        /////
+//        let userDefault = UserDefaults()
+//        if let data = userDefault.object(forKey: "Date"){
+//            if let dataString = data as? String{
+//                if depatureORreturn == 1{
+//                    //                    ReturnDate = dateFormatter.string(from: dataString)
+//                    //                    let returnDateSplit = ReturnDate.characters.split{$0 == ","}.map(String.init)
+//                    self.depatureOutlet.text = dataString
+//                }
+//                else if depatureORreturn == 2{
+//                    self.returnLblOutlet.text = dataString
+//                }
+//                //self.travellerLbl.text = dataString
+//            }
+//        }
+        
         if depatureORreturn == 1{
            //depatureOutlet.text = dateFormatter.string(from: startDate) //+ " to " + dateFormatter.string(from: endDate)
+
             DepatureDate = dateFormatter.string(from: startDate)
+            //print(DepatureDate)
             let depatureDateSplit = DepatureDate.characters.split{$0 == ","}.map(String.init)
             depatureOutlet.text = "\(depatureDateSplit[1]),\(depatureDateSplit[2])"
             print(depatureDateSplit[1], depatureDateSplit[2])
@@ -257,7 +314,7 @@ extension ViewController : CalendarDateRangePickerViewControllerDelegate {
             ReturnDate = dateFormatter.string(from: startDate)
             let returnDateSplit = ReturnDate.characters.split{$0 == ","}.map(String.init)
             returnLblOutlet.text = "\(returnDateSplit[1]),\(returnDateSplit[2])"
-            
+
             print(returnDateSplit[1], returnDateSplit[2])
         }
         

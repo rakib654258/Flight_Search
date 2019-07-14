@@ -1,0 +1,60 @@
+{
+    "AirportList": [
+        {
+            "Code": "ANW",
+            "Value": "Ainsworth Municipal Airport",
+            "City": "Ainsworth",
+            "Country": "UNITED STATES",
+            "Latitude": "42.58",
+            "Longitude": "-99.9933"
+        },
+        {
+            "Code": "ANU",
+            "Value": "V.C. Bird International Airport",
+            "City": "Antigua",
+            "Country": "ANTIGUA AND BARBUDA",
+            "Latitude": "17.136749",
+            "Longitude": "-61.792667"
+        },
+        {
+            "Code": "ANR",
+            "Value": "Antwerp International Airport (Deurne)",
+            "City": "Antwerp",
+            "Country": "BELGIUM",
+            "Latitude": "51.189444",
+            "Longitude": "4.460278"
+        },
+        {
+            "Code": "ANP",
+            "Value": "Lee Airport",
+            "City": "Annapolis",
+            "Country": "UNITED STATES",
+            "Latitude": "0",
+            "Longitude": "0"
+        },
+        {
+            "Code": "ANI",
+            "Value": "Aniak Airport",
+            "City": "Aniak",
+            "Country": "UNITED STATES",
+            "Latitude": "61.5816",
+            "Longitude": "-159.543"
+        },
+        {
+            "Code": "ESB",
+            "Value": "Esenboga International Airport",
+            "City": "Ankara",
+            "Country": "TURKEY",
+            "Latitude": "40.128082",
+            "Longitude": "32.995083"
+        },
+        {
+            "Code": "ANG",
+            "Value": "Angouleme-Brie-Champniers Airport",
+            "City": "Angouleme",
+            "Country": "FRANCE",
+            "Latitude": "45.729247",
+            "Longitude": "0.221456"
+            }
+        ]
+}

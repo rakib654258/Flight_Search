@@ -18,6 +18,7 @@ class SeatTypeController: UIViewController {
     var Children = 0
     var Adults = 0
     var infants = 0
+    var travellers = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Seat Type & Travellers"
@@ -102,17 +103,24 @@ class SeatTypeController: UIViewController {
     @IBAction func DoneBtnAction(_ sender: UIButton) {
         print("There are \(Adults) Adults,\(Children) Childrens and \(infants) Infants.Total \(Adults+Children+infants) Travelers.")
         print("Preferred class: \(seatType)")
-        performSegue(withIdentifier: "seatTypeSegue", sender: self)
+        travellers = "\(Adults+Children+infants) Passengers"
+        //performSegue(withIdentifier: "seatTypeSegue", sender: self)
+        let userDefault = UserDefaults()
+        userDefault.set(seatType, forKey: "SeatType")
+        userDefault.set(travellers, forKey: "Traveller")
+        userDefault.set(Adults, forKey: "adult")
+        userDefault.set(Children, forKey: "child")
+        userDefault.set(infants, forKey: "Infant")
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let sendData = segue.destination as? ViewController
-        sendData!.adult = Adults
-        sendData!.child = Children
-        sendData!.infant = infants
-        sendData!.seatType = seatType
-        //sendData!.seatTypeLbl.text = seat
-        //sendData!.travellerLbl.text = String()
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let sendData = segue.destination as? ViewController
+//        sendData!.adult = Adults
+//        sendData!.child = Children
+//        sendData!.infant = infants
+//        sendData!.seatType = seatType
+//        //sendData!.seatTypeLbl.text = seat
+//        //sendData!.travellerLbl.text = String()
+//    }
     
 }
